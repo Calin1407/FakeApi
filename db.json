@@ -1,0 +1,86 @@
+{
+  "users": [
+    { "id": "usr_001", "email": "marcelinoagromail@gmail.com", "password_hash": "hash_789abc" },
+    { "id": "usr_002", "email": "anitamonagosupply@gmail.com", "password_hash": "hash_123xyz" },
+    { "id": "usr_003", "email": "albertasesorterra@gmail.com", "password_hash": "hash_456def" },
+    { "id": "usr_004", "email": "lucianaaguilartech@gmail.com", "password_hash": "hash_987ghi" },
+    { "id": "usr_005", "email": "karimcastillofield@gmail.com", "password_hash": "hash_654jkl" }
+  ],
+  "profiles": [
+    { "id": "prof_001", "user_id": "usr_001", "fundo_name": "Fundo Los Olivos - Huánuco", "contact_phone": "+51 987654321", "moisture_threshold": 25.5, "temp_threshold": 30.0 },
+    { "id": "prof_002", "user_id": "usr_002", "fundo_name": "Distribuidora Cañete", "contact_phone": "+51 912345678", "moisture_threshold": 20.0, "temp_threshold": 35.0 },
+    { "id": "prof_003", "user_id": "usr_003", "fundo_name": "Asesoría Técnica Sur", "contact_phone": "+51 955667788", "moisture_threshold": 15.0, "temp_threshold": 28.5 },
+    { "id": "prof_004", "user_id": "usr_004", "fundo_name": "Parcela La Esperanza", "contact_phone": "+51 944332211", "moisture_threshold": 22.0, "temp_threshold": 32.0 },
+    { "id": "prof_005", "user_id": "usr_005", "fundo_name": "Agro Karim", "contact_phone": "+51 999888777", "moisture_threshold": 18.5, "temp_threshold": 29.0 }
+  ],
+  "community_profiles": [
+    { "id": "com_001", "profile_id": "prof_001", "nickname": "MarcelinoZanahorias", "reputation_score": 95, "public_bio": "Farmer from Huánuco focused on organic carrots.", "visibility_status": true },
+    { "id": "com_002", "profile_id": "prof_002", "nickname": "AnitaInsumos", "reputation_score": 88, "public_bio": "Agricultural input supplier in Cañete.", "visibility_status": true },
+    { "id": "com_003", "profile_id": "prof_003", "nickname": "AlbertTech", "reputation_score": 100, "public_bio": "Expert advisor in technical irrigation.", "visibility_status": true },
+    { "id": "com_004", "profile_id": "prof_004", "nickname": "LucianaField", "reputation_score": 75, "public_bio": "I prefer to keep my activity private.", "visibility_status": false },
+    { "id": "com_005", "profile_id": "prof_005", "nickname": "KarimAgro", "reputation_score": 92, "public_bio": "Sharing experiences about the climate.", "visibility_status": true }
+  ],
+  "comments": [
+    { "id": "cmt_001", "author_profile_id": "prof_003", "target_profile_id": "prof_001", "content": "Marcelino, your moisture levels are optimal for harvest.", "created_at": "2026-05-10" },
+    { "id": "cmt_002", "author_profile_id": "prof_002", "target_profile_id": "prof_004", "content": "I have the sensors you need for La Esperanza.", "created_at": "2026-05-11" },
+    { "id": "cmt_003", "author_profile_id": "prof_001", "target_profile_id": "prof_003", "content": "Thanks for the advice, Albert.", "created_at": "2026-05-12" },
+    { "id": "cmt_004", "author_profile_id": "prof_005", "target_profile_id": "prof_002", "content": "Excellent service in equipment delivery.", "created_at": "2026-05-12" },
+    { "id": "cmt_005", "author_profile_id": "prof_004", "target_profile_id": "prof_005", "content": "How is it going with the seed variety this year?", "created_at": "2026-05-13" }
+  ],
+  "products": [
+    { "id": "prod_001", "name": "LoRa Moisture Sensor", "description": "High precision sensor for soil.", "price": 150.0, "type": "IOT" },
+    { "id": "prod_002", "name": "TerraTech Plus", "description": "Our best subscription with full analytics and premium support.", "price": 49.90, "type": "SUBSCRIPTION" },
+    { "id": "prod_003", "name": "TerraTech Premium", "description": "Standard plan for efficient crop monitoring.", "price": 29.90, "type": "SUBSCRIPTION" },
+    { "id": "prod_004", "name": "TerraTech Freemium", "description": "Free plan with basic visualization features.", "price": 0.0, "type": "SUBSCRIPTION" },
+    { "id": "prod_005", "name": "Smart Valve", "description": "Remote irrigation control.", "price": 120.0, "type": "IOT" }
+  ],
+  "orders": [
+    { "id": "ord_001", "profile_id": "prof_001", "product_id": "prod_001", "status": "PAID", "total_amount": 150.0, "created_at": "2026-05-01" },
+    { "id": "ord_002", "profile_id": "prof_004", "product_id": "prod_002", "status": "PAID", "total_amount": 49.90, "created_at": "2026-05-02" },
+    { "id": "ord_003", "profile_id": "prof_005", "product_id": "prod_003", "status": "PAID", "total_amount": 29.90, "created_at": "2026-05-03" },
+    { "id": "ord_004", "profile_id": "prof_003", "product_id": "prod_004", "status": "PAID", "total_amount": 0.0, "created_at": "2026-05-04" },
+    { "id": "ord_005", "profile_id": "prof_002", "product_id": "prod_002", "status": "PENDING", "total_amount": 49.90, "created_at": "2026-05-05" }
+  ],
+  "subscriptions": [
+    { "id": "sub_001", "profile_id": "prof_004", "product_id": "prod_002", "order_id": "ord_002", "start_date": "2026-05-02", "end_date": "2026-06-02", "status": "ACTIVE", "auto_renew": true },
+    { "id": "sub_002", "profile_id": "prof_005", "product_id": "prod_003", "order_id": "ord_003", "start_date": "2026-05-03", "end_date": "2026-06-03", "status": "ACTIVE", "auto_renew": true },
+    { "id": "sub_003", "profile_id": "prof_003", "product_id": "prod_004", "order_id": "ord_004", "start_date": "2026-05-04", "end_date": "2099-12-31", "status": "ACTIVE", "auto_renew": false },
+    { "id": "sub_004", "profile_id": "prof_002", "product_id": "prod_002", "order_id": "ord_005", "start_date": "2026-05-05", "end_date": "2026-06-05", "status": "PENDING", "auto_renew": true },
+    { "id": "sub_005", "profile_id": "prof_001", "product_id": "prod_003", "order_id": "ord_001", "start_date": "2026-01-01", "end_date": "2026-02-01", "status": "EXPIRED", "auto_renew": false }
+  ],
+  "fields": [
+    { "id": "fld_001", "profile_id": "prof_001", "name": "Carrot Plot A", "size_m2": 5000, "soil_type": "Sandy", "location_lat_long": "-9.9306,-76.2422" },
+    { "id": "fld_002", "profile_id": "prof_001", "name": "Potato Plot B", "size_m2": 3000, "soil_type": "Clay-loam", "location_lat_long": "-9.9310,-76.2430" },
+    { "id": "fld_003", "profile_id": "prof_004", "name": "Experimental Cactus", "size_m2": 1000, "soil_type": "Stony", "location_lat_long": "-12.0464,-77.0428" },
+    { "id": "fld_004", "profile_id": "prof_005", "name": "Tomato Greenhouse", "size_m2": 1500, "soil_type": "Organic", "location_lat_long": "-13.0778,-76.3853" },
+    { "id": "fld_005", "profile_id": "prof_005", "name": "Fruit Trees", "size_m2": 8000, "soil_type": "Silty", "location_lat_long": "-13.0780,-76.3860" }
+  ],
+  "devices": [
+    { "id": "dev_001", "field_id": "fld_001", "mac_address": "AA:BB:CC:00:11:22", "status": "ONLINE", "last_sync": "2026-05-13T10:00:00Z" },
+    { "id": "dev_002", "field_id": "fld_001", "mac_address": "AA:BB:CC:33:44:55", "status": "OFFLINE", "last_sync": "2026-05-12T15:30:00Z" },
+    { "id": "dev_003", "field_id": "fld_003", "mac_address": "DD:EE:FF:66:77:88", "status": "ONLINE", "last_sync": "2026-05-13T09:15:00Z" },
+    { "id": "dev_004", "field_id": "fld_004", "mac_address": "11:22:33:AA:BB:CC", "status": "ONLINE", "last_sync": "2026-05-13T11:00:00Z" },
+    { "id": "dev_005", "field_id": "fld_005", "mac_address": "44:55:66:DD:EE:FF", "status": "LOW_BATTERY", "last_sync": "2026-05-13T08:00:00Z" }
+  ],
+  "reports": [
+    { "id": "rep_001", "device_id": "dev_001", "generated_at": "2026-05-13", "mean_value": 66.046, "variance": 12.5, "standard_deviation": 3.53, "technical_interpretation": "The average humidity of 66% indicates well-hydrated soil." },
+    { "id": "rep_002", "device_id": "dev_003", "generated_at": "2026-05-13", "mean_value": 22.1, "variance": 5.2, "standard_deviation": 2.28, "technical_interpretation": "Critical moisture levels detected; immediate irrigation required." },
+    { "id": "rep_003", "device_id": "dev_004", "generated_at": "2026-05-13", "mean_value": 28.5, "variance": 1.8, "standard_deviation": 1.34, "technical_interpretation": "Thermal stability observed within the expected range for tomatoes." },
+    { "id": "rep_004", "device_id": "dev_005", "generated_at": "2026-05-12", "mean_value": 45.2, "variance": 20.1, "standard_deviation": 4.48, "technical_interpretation": "High variability in data; sensor review is recommended." },
+    { "id": "rep_005", "device_id": "dev_001", "generated_at": "2026-05-12", "mean_value": 65.8, "variance": 10.3, "standard_deviation": 3.21, "technical_interpretation": "Stable data behavior compared to the previous day." }
+  ],
+  "inventory": [
+    { "id": "inv_001", "product_id": "prod_001", "stock_quantity": 45, "warehouse_location": "Main Warehouse Lima" },
+    { "id": "inv_002", "product_id": "prod_003", "stock_quantity": 10, "warehouse_location": "Cañete Warehouse" },
+    { "id": "inv_003", "product_id": "prod_005", "stock_quantity": 30, "warehouse_location": "Huánuco Warehouse" },
+    { "id": "inv_004", "product_id": "prod_001", "stock_quantity": 15, "warehouse_location": "Cañete Warehouse" },
+    { "id": "inv_005", "product_id": "prod_003", "stock_quantity": 5, "warehouse_location": "Main Warehouse Lima" }
+  ],
+  "notifications": [
+    { "id": "not_001", "profile_id": "prof_001", "title": "Moisture Alert", "message": "Level below 25% in Plot A.", "is_alert": true, "is_read": false },
+    { "id": "not_002", "profile_id": "prof_004", "title": "Plus Subscription", "message": "Your Plus access is active.", "is_alert": false, "is_read": true },
+    { "id": "not_003", "profile_id": "prof_005", "title": "Low Battery", "message": "Sensor dev_005 has less than 10% energy remaining.", "is_alert": true, "is_read": false },
+    { "id": "not_004", "profile_id": "prof_003", "title": "Freemium Plan", "message": "You are using the free version of TerraTech.", "is_alert": false, "is_read": true },
+    { "id": "not_005", "profile_id": "prof_002", "title": "Pending Order", "message": "Your Plus subscription order is awaiting payment.", "is_alert": true, "is_read": false }
+  ]
+}
